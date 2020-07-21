@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.31" height="15.375" viewBox="0 0 19.31 15.375">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e94249;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="burger" class="cls-1" d="M1355,128.158v-1.335h19.32v1.335H1355Zm0,7.009v-1.335h19.32v1.335H1355Zm0,7.009v-1.335h19.32v1.335H1355Z" transform="translate(-1355 -126.813)"/>
+</svg>
