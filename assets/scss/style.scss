@@ -113,7 +113,36 @@ h3 {}
 
 h4 {}
 
-
+.crumbs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    li{
+        margin-right: 5px;
+        &:not(:last-of-type){
+            &:after{
+                content: '/';
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                color: #333333;
+                font-size: 12px;
+            }
+        }
+        a{
+            color: #333333;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &:last-of-type{
+            a{
+                color: #3a5da8;
+            }
+        }
+    }
+}
 
 @media (min-width: 768px) {
     .container {
@@ -137,6 +166,14 @@ h4 {}
 @media (min-width: 1280px) {
     .container {
         width: 1080px;
+    }
+    .crumbs{
+        margin-bottom: 40px;
+        li{
+            a{
+                font-size: 14px;
+            }
+        }
     }
 }
 

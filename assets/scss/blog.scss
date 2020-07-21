@@ -1,0 +1,205 @@
+main{
+  padding-bottom: 15px;
+  h2{
+    margin-bottom: 30px;
+  }
+  .some-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    p{
+      width: 135px;
+      height: 58px;
+      line-height: 58px;
+      text-align: center;
+      border-radius: 29px;
+      border: 1px solid #8d9fc6;
+      margin-bottom: 15px;
+      color: #8d9fc6;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .active{
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+      background-color: #3a5da8;
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+  .all-article{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .one-article{
+      max-width: 407px;
+      width: 100%;
+      margin-bottom: 35px;
+      position: relative;
+      .abs{
+        width: 105px;
+        height: 23px;
+        line-height: 23px;
+        border-radius: 11px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        text-align: center;
+        color: #3a5da8;
+        font-size: 10px;
+      }
+      .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+      .text{
+        padding: 25px 5px 0 14px;
+        a{
+          color: #333333;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 26px;
+          margin-bottom: 20px;
+          display: block;
+        }
+        p{
+          color: #000000;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+        span{
+          color: #8d9fc6;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .mob-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      span{
+        margin-right: 10px;
+        color: #8d9fc6;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      i{
+        color: #8d9fc6;
+        font-size: 18px;
+      }
+    }
+  }
+  .pagin{
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  main{
+    .some-filter{
+      p{
+        width: 155px;
+      }
+    }
+    .all-article{
+      justify-content: space-between;
+      .one-article{
+        max-width: 315px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main{
+    padding-bottom: 110px;
+    .some-filter{
+      max-width: 890px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 55px;
+      p{
+        width: 190px;
+      }
+    }
+    .all-article{
+      margin-bottom: 30px;
+      .one-article{
+        max-width: 407px;
+        margin-bottom: 27px;
+        .abs{
+          top: 15px;
+          left: 19px;
+        }
+      }
+    }
+    .mob-button{
+      display: none;
+    }
+    .pagin{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .arr-pagin{
+        color: #8d9fc6;
+        font-size: 14px;
+        &:last-of-type{
+          transform: rotate(180deg);
+        }
+      }
+      ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 60px;
+        li{
+          width: 49px;
+          height: 49px;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          text-align: center;
+          line-height: 49px;
+          transition: 0.5s;
+          margin: 0 10px;
+          a{
+            color: #333333;
+            transition: 0.5s;
+            font-size: 14px;
+          }
+        }
+        .active{
+          border: 1px solid #dfdfdf;
+          a{
+            font-weight: 700;
+            color: #e94249;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  main{
+    h2{
+      margin-bottom: 60px;
+    }
+  }
+}
