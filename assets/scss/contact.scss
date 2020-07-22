@@ -1,0 +1,44 @@
+main{
+  h2{
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .top-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .one-inf{
+      margin-bottom: 25px;
+      h5{
+        color: #333333;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+      .link{
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        img{
+          margin-right: 10px;
+          max-width: 18px;
+        }
+        i{
+          color: #3a5da8;
+          margin-right: 10px;
+          font-size: 18px;
+          margin-top: 5px;
+        }
+        a{
+          color: #333333;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .map{
+    height: 400px;
+  }
+}
