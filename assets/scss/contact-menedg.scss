@@ -218,6 +218,9 @@
   }
   .big{
     .contact-menedg{
+      .phone{
+        right: 1%;
+      }
       h5{
         margin-left: 0;
       }
@@ -269,7 +272,7 @@
 @media (min-width: 1600px) {
   .big{
     .contact-menedg{
-      padding: 35px 30px 25px;
+      padding: 35px 40px 25px;
       form{
         .inp{
           width: 278px;
