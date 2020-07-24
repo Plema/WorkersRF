@@ -1,0 +1,203 @@
+main{
+  padding-bottom: 65px;
+  h2{
+    margin-bottom: 25px;
+  }
+  .top-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .one-top{
+      margin-bottom: 30px;
+      .numb{
+        width: 46px;
+        height: 46px;
+        line-height: 46px;
+        background-color: #3a5da8;
+        margin-bottom: 15px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 50%;
+      }
+      p{
+        color: #333333;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+  }
+  .red-button{
+    margin-bottom: 65px;
+  }
+  .all-vacancies{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .one-vacancie{
+      padding: 40px 25px 35px;
+      border-radius: 20px;
+      background: #efefef;
+      margin-bottom: 30px;
+      transition: 0.5s;
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0);
+      cursor: pointer;
+      .text{
+        padding-left: 25px;
+        position: relative;
+        transition: 0.5s;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 20px;
+          height: 5px;
+          border-radius: 2px;
+          background: #e94249;
+        }
+        h6{
+          margin-bottom: 25px;
+          color: #2b2b2b;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          transition: 0.5s;
+        }
+        ul{
+          margin-bottom: 25px;
+          li{
+            color: #2b2b2b;
+            font-size: 16px;
+            font-weight: 300;
+            transition: 0.5s;
+            margin-bottom: 8px;
+            padding-left: 12px;
+            position: relative;
+            &:before{
+              width: 6px;
+              height: 1px;
+              content: '';
+              top: 9px;
+              left: 0;
+              background: #2b2b2b;
+              font-size: 16px;
+              position: absolute;
+            }
+          }
+        }
+        span{
+          color: #3a5da8;
+          font-size: 12px;
+          font-weight: 700;
+          transition: 0.5s;
+        }
+      }
+      &:hover{
+        box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+        background: #ffffff;
+        .text{
+          span{
+            color: #8d9fc6;
+          }
+        }
+      }
+    }
+  }
+  .mob-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      span{
+        margin-right: 10px;
+        color: #8d9fc6;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      i{
+        color: #8d9fc6;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main{
+    .top-info{
+      .one-top{
+        max-width: 45%;
+      }
+    }
+    .all-vacancies{
+      justify-content: space-between;
+      .one-vacancie{
+        max-width: 48%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  main{
+    padding-bottom: 90px;
+    h2{
+      margin-bottom: 60px;
+    }
+    .top-info{
+      margin-bottom: 20px;
+      .one-top{
+        max-width: 242px;
+      }
+    }
+    .red-button{
+      margin-bottom: 110px;
+    }
+    .all-vacancies{
+      .one-vacancie{
+        padding: 50px 65px 35px;
+        margin-bottom: 50px;
+        .text{
+          padding-left: 30px;
+          h6{
+            font-size: 18px;
+          }
+          ul{
+            margin-bottom: 30px;
+            li{
+              font-size: 18px;
+            }
+          }
+          span{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .mob-button{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  main{
+    .all-vacancies{
+      .one-vacancie{
+        max-width: 610px;
+      }
+    }
+  }
+}
