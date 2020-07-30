@@ -184,7 +184,6 @@ main{
   }
   .eight-blocks{
     position: relative;
-    padding-bottom: 65px;
     &:before{
       width: 100%;
       height: 100%;
@@ -331,6 +330,7 @@ main{
   }
 }
 .how-we-work{
+  margin-bottom: 55px;
   h2{
     margin-bottom: 25px;
   }
@@ -338,7 +338,206 @@ main{
     display: none;
   }
   .mob-view{
-
+    .block-logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 45px;
+      width: 237px;
+      height: 79px;
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+      border-radius: 29px;
+      border: 2px solid #3a5da8;
+      position: relative;
+      img{
+        max-width: 140px;
+        width: 100%;
+      }
+      &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 79px;
+        width: 12px;
+        height: 153px;
+        background: url('../img/line1.png') no-repeat 50%;
+        background-size: contain;
+        z-index: 0;
+      }
+      &:before{
+        left: 29px;
+      }
+      &:after{
+        right: 29px;
+      }
+    }
+    .block-man{
+      position: relative;
+      margin: 0 auto 35px;
+      width: 120px;
+      height: 74px;
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+      border-radius: 29px;
+      background-image: linear-gradient(to right, #3a5da8 0%, #3a5da8 5%, #8d9fc6 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:before, &:after{
+        content: '';
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 0;
+      }
+      &:before{
+        width: 12px;
+        height: 45px;
+        bottom: 74px;
+        background: url('../img/line-blue.png') no-repeat 50%;
+        background-size: contain;
+      }
+      &:after{
+        background: url('../img/dashed-line.png') no-repeat 50%;
+        background-size: contain;
+        top: 74px;
+        width: 12px;
+        height: 373px;
+      }
+    }
+    .two-bloc-text{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 45px;
+      .one-text{
+        width: 128px;
+        height: 63px;
+        box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+          text-align: center;
+          color: #333333;
+          font-size: 11px;
+          font-weight: 400;
+        }
+      }
+      .left{
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 63px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background: url('../img/line2.png') no-repeat 50%;
+          background-size: contain;
+          width: 12px;
+          height: 45px;
+          z-index: 0;
+        }
+      }
+      .right{
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 63px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background: url('../img/line3.png') no-repeat 50%;
+          background-size: contain;
+          width: 12px;
+          height: 173px;
+          z-index: 0;
+        }
+      }
+    }
+    .left-f-text{
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+      width: 128px;
+      height: 73px;
+      border-radius: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 55px;
+        &:before{
+          content: '';
+          position: absolute;
+          top: 73px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          background: url('../img/line2.png') no-repeat 50%;
+          background-size: contain;
+          width: 12px;
+          height: 55px;
+          z-index: 0;
+        }
+      p{
+        text-align: center;
+        color: #333333;
+        font-size: 11px;
+        font-weight: 400;
+      }
+    }
+    .two-blue-img{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 59px;
+      .one-blue-img{
+        margin:  0 10px;
+        width: 107px;
+        height: 43px;
+        box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+        border-radius: 21px;
+        background-image: linear-gradient(to right, #3a5da8 0%, #3a5da8 5%, #8d9fc6 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right{
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          top:43px;
+          left: 0;
+          right: 10px;
+          margin: auto;
+          background: url('../img/line4.png') no-repeat 50%;
+          background-size: contain;
+          width: 25px;
+          height: 84px;
+          z-index: 0;
+        }
+      }
+    }
+    .one-center{
+      margin: 0 auto;
+      width: 118px;
+      height: 43px;
+      box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+      border-radius: 21px;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        text-align: center;
+        color: #333333;
+        font-size: 11px;
+        font-weight: 400;
+      }
+    }
   }
 }
 
@@ -355,6 +554,31 @@ main{
       justify-content: space-around;
       .one-category{
         margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  .how-we-work{
+    .mob-view{
+      .block-logo{
+        width: 300px;
+      }
+      .two-bloc-text{
+        margin: 0 auto 45px;
+        max-width: 320px;
+        width: 100%;
+      }
+      .oned{
+        margin: 0 auto;
+        max-width: 320px;
+        width: 100%;
+      }
+      .two-blue-img{
+        margin: 0 auto 59px;
+        max-width: 320px;
+        width: 100%;
       }
     }
   }
@@ -495,6 +719,198 @@ main{
       }
     }
   }
+  .how-we-work{
+    margin-bottom: 105px;
+    .mob-view{
+      display: none;
+    }
+    .desc-view{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .left-part{
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .block-man{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 200px;
+          height: 112px;
+          box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+          border-radius: 29px;
+          background-image: linear-gradient(to right, #3a5da8 0%, #3a5da8 5%, #8d9fc6 100%);
+          margin-bottom: -1px;
+          position: relative;
+          &:before{
+            background: url('../img/line6.png') no-repeat 50% 50%;
+            background-size: contain;
+            width: 250px;
+            height: 18px;
+            left: 200px;
+            content: '';
+            position: absolute;
+          }
+        }
+        .block-logo{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 230px;
+          height: 121px;
+          box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+          border-radius: 29px;
+          border: 2px solid #3a5da8;
+          position: relative;
+          &:before, &:after{
+            content: '';
+            position: absolute;
+          }
+          &:before{
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 230px;
+            height: 2px;
+            width: 45px;
+            background-color: #dededf;
+          }
+          &:after{
+            background: url('../img/line02.png') no-repeat 50% 50%;
+            background-size: contain;
+            width: 170px;
+            height: 220px;
+            left: 275px;
+            top: -95px;
+          }
+        }
+      }
+      .right-part{
+        width: 100%;
+        .top-block{
+          margin: 20px  auto 30px;
+          width: 200px;
+          height: 65px;
+          box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+          border-radius: 33px;
+          background-color: #ffffff;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:before{
+            background: url('../img/line7.png') no-repeat 50% 50%;
+            background-size: contain;
+            content: '';
+            height: 105px;
+            position: absolute;
+            left: 200px;
+            top: 55px;
+            bottom: 0;
+            margin: auto;
+            width: 165px;
+          }
+          p{
+            color: #333333;
+            font-size: 13px;
+            font-weight: 400;
+          }
+        }
+        .bottom-block{
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          .left-inf-part{
+            width: 100%;
+            .text{
+              width: 200px;
+              height: 65px;
+              box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+              border-radius: 33px;
+              background-color: #ffffff;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              p{
+                color: #333333;
+                font-size: 13px;
+                font-weight: 400;
+              }
+            }
+            .top{
+              margin: 0 115px 135px auto;
+              &:before{
+                background-size: contain;
+                background: url('../img/line8.png') no-repeat 50% 50%;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 200px;
+                bottom: 0;
+                margin: auto;
+                height: 18px;
+                width: 115px;  
+              }
+            }
+            .bot-i{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 35px;
+              .text{
+                position: relative;
+                &:before{
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  margin: auto;
+                  left: 200px;
+                }
+                &:first-of-type{
+                  margin-right: 55px;
+                  &:before{
+                    width: 55px;
+                    height: 18px;
+                    background: url('../img/line03.png') no-repeat 50% 50%;
+                    background-size: contain;
+                  }
+                }
+                &:last-of-type{
+                  &:before{
+                    width: 20px;
+                    height: 2px;
+                    background: #dededf;
+                  }
+                }
+              }
+            }
+          }
+          .right-inp-part{
+            width: 100px;
+            .one-blue{
+              width: 100px;
+              height: 65px;
+              box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
+              border-radius: 29px;
+              background-image: linear-gradient(to right, #3a5da8 0%, #3a5da8 5%, #8d9fc6 100%);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &:first-of-type{
+                margin-bottom: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .first{
     margin-bottom: 130px;
   }
@@ -574,6 +990,85 @@ main{
       }
     }
   }
+  .how-we-work{
+    .desc-view{
+      .left-part{
+        width: 270px;
+        .block-logo{
+          width: 270px;
+          &:before{
+            left: 270px;
+            width: 71px;
+          }
+          &:after{
+            left: 340px;
+            width: 175px;
+            top: -60px;
+          }
+        }
+        .block-man{
+          width: 230px;
+          &:before{
+            left: 230px;
+            width: 315px;
+          }
+        }
+      }
+      .right-part{
+        .top-block{
+          width: 250px;
+          margin-bottom: 63px;
+          margin-right: 313px;
+          &:before{
+            left: 250px;
+            top: 85px;
+            width: 300px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+        .bottom-block{
+          .left-inf-part{
+            .top{
+              margin-right: 210px;
+              &:before{
+                left: 250px;
+                width: 210px;
+              }
+            }
+            .text{
+              width: 250px;
+              p{
+                font-size: 14px;
+              }
+            }
+            .bot-i{
+              margin-left: 75px;
+              .text{
+                &:first-of-type{
+                  &:before{
+                    left: 250px;
+                  }
+                }
+                &:last-of-type{
+                  &:before{
+                    width: 40px;
+                    left: 250px;
+                  }
+                }
+              }
+            }
+          }
+          .right-inp-part{
+            .one-blue{
+              width: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
   .saved-money-time{
     .eight-blocks{
       .all-bl8{
@@ -641,6 +1136,66 @@ main{
       left: -5%;
     }
   }
+  .how-we-work{
+    .desc-view{
+      .left-part{
+        width: 320px;
+        .block-logo{
+          width: 320px;
+          &:before{
+            left: 320px;
+          }
+          &:after{
+            left: 389px;
+          }
+        }
+      }
+      .right-part{
+        .top-block{
+          width: 258px;
+          margin-right: 345px;
+          &:before{
+            left: 262px;
+            top: 80px;
+            width: 265px;
+          }
+        }
+        .bottom-block{
+          .left-inf-part{
+            .top{
+              margin-right: 135px;
+              &:before{
+                width: 135px;
+              }
+            }
+            .bot-i{
+              margin-left: 80px;
+              .text{
+                &:first-of-type{
+                  margin-right: 25px;
+                  &:before{
+                    width: 25px;
+                  }
+                }
+                &:last-of-type{
+                  margin-right: 5px;
+                  &:before{
+                    width: 15px;
+                  }
+                }
+              }
+            }
+          }
+          .right-inp-part{
+            width: 210px;
+            .one-blue{
+              width: 210px;
+            }
+          }
+        }
+      }
+    }
+  }
   .saved-money-time{
     .eight-blocks{
       .all-bl8{
@@ -684,6 +1239,72 @@ main{
       .all-bl8{
         .one-block{
           max-width: 295px;
+        }
+      }
+    }
+  }
+  .how-we-work{
+    .desc-view{
+      .left-part{
+        width: 363px;
+        .block-logo{
+          width: 363px;
+          &:before{
+            left: 363px;
+          }
+          &:after{
+            left: 431px;
+          }
+        }
+        .block-man{
+          &:before{
+            width: 311px;
+          }
+        }
+      }
+      .right-part{
+        .top-block{
+          margin-right: 415px;
+          &:before{
+            top: 80px;
+            width: 310px;
+            left: 260px;
+          }
+        }
+        .bottom-block{
+          .left-inf-part{
+            .top{
+              margin-right: 210px;
+              margin-bottom: 143px;
+              &:before{
+                width: 211px;
+              }
+            }
+            .bot-i{
+              margin-left: 120px;
+              .text{
+                &:first-of-type{
+                  margin-right: 53px;
+                  &:before{
+                    width: 53px;
+                  }
+                }
+                &:last-of-type{
+                  margin-right: 33px;
+                  &:before{
+                    width: 33px;
+                  }
+                }
+              }
+            }
+          }
+          .right-inp-part{
+            .one-blue{
+              &:first-of-type{
+                margin-bottom: 143px;
+              }
+            }
+          }
         }
       }
     }

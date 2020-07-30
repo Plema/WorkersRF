@@ -1,4 +1,5 @@
 @import "libs/button";
+@import "libs/pop-up";
 @import "libs/header";
 @import "libs/footer";
 @import "libs/fonts";
@@ -11,6 +12,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 html {

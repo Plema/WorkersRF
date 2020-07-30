@@ -1,6 +1,9 @@
 main{
   overflow: hidden;
 }
+footer{
+  z-index: 5;
+}
 
 .datepickers-container{
   top: -10px;
@@ -642,6 +645,11 @@ main{
         text-decoration: underline;
         display: block;
         margin-bottom: 30px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+          color: #3a5da8;
+        }
       }
     }
   }

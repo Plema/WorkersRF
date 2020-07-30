@@ -1,6 +1,8 @@
 $(document).ready(function(){
  
-  
+  $('.top-but').removeClass('acti');
+  $('.phis').addClass('acti');
+
   $('.slider-banner').slick({
     dots: true,
     arrows: true,
@@ -25,17 +27,12 @@ $(document).ready(function(){
   $('.slick-arrow').empty();
   $('.slick-dots > li > button').empty();
 
-
-
-
-
   $( ".showText2" ).click(function(event) {
     event.preventDefault();
    $('.sel2').stop().slideToggle();
   });
   $( ".hiddenText2" ).click(function(event) {
       var x = $(this).text();
-      console.log(x)
       var y = $(".showText2").text();
         $(this).text(y);
         $(".showText2").text(x);
@@ -49,7 +46,6 @@ $(document).ready(function(){
   });
   $( ".hiddenText3" ).click(function(event) {
       var x = $(this).text();
-      console.log(x)
       $(this).parent().parent().toggleClass('open-sel')
       var y = $(".showText3").text();
         $(this).text(y);
@@ -81,7 +77,6 @@ $(document).ready(function(){
         });
         $( ".hiddenText" ).click(function(event) {
             var x = $(this).text();
-            console.log(x)
             var y = $(".showText").text();
               $(this).text(y);
               $(".showText").text(x);
@@ -105,5 +100,13 @@ $(document).ready(function(){
   $('#my-element').datepicker({
     minDate: new Date(  )
   })
+
+  
+  $(".primechanie").bind("click", function(event){
+    $('.primechanie-pop').addClass('open-pop');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow','hidden');
+  });
+
 
 });

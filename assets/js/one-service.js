@@ -20,7 +20,6 @@ $(document).ready(function(){
       });
       $( ".hiddenText" ).click(function(event) {
           var x = $(this).text();
-          console.log(x)
           var y = $(".showText").text();
             $(this).text(y);
             $(".showText").text(x);

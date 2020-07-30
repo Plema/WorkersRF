@@ -1,5 +1,7 @@
 $(document).ready(function(){
  
+  $('.top-but').removeClass('acti');
+  $('.ur').addClass('acti');
   
   $('.slider-banner').slick({
     dots: true,
@@ -53,5 +55,7 @@ $(document).ready(function(){
   //Slick-empty
   $('.slick-arrow').empty();
   $('.slick-dots > li > button').empty();
+
+
 
 });
