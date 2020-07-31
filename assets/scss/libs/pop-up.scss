@@ -106,7 +106,61 @@
   height: 450px;
   overflow-y: scroll;
   .file{
-    display: none;
+    .file-inp{
+      .control-label{
+        display: none;
+      }
+      .file-caption{
+        margin-bottom: 15px;
+        .file-caption-name{
+          width: 250px;
+          height: 58px;
+          border-radius: 29px;
+          border: 1px solid #8d9fc6;
+          padding: 15px;
+          color: #8d9fc6;
+          font-size: 14px;
+          font-weight: 400;
+          &::placeholder{
+            color: #8d9fc6;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+      .input-group-btn{
+        .btn-file{
+          width: 249px;
+          height: 58px;
+          border-radius: 29px;
+          border: 1px solid #333333;
+          background-color: #ffffff;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span{
+            color: #333333;
+            font-size: 14px;
+            font-weight: 700;
+            display: block;
+          }
+        }
+        .fileinput-remove-button{
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          background: none;
+          border: none;
+          z-index: 10;
+          top: 18px;
+          left: 225px;
+        }
+        .fileinput-upload-button{
+          display: none;
+        }
+      }
+    }
   }
   .caps{
     text-transform: uppercase;
@@ -383,6 +437,22 @@
   .vacancy{
     height: 630px;
     form{
+      .file{
+        .file-inp{
+          .file-input{
+            .file-caption-main{
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              .file-caption{
+                .file-caption-name{
+                  width: 414px;
+                }
+              }
+            }
+          }
+        }
+      }
       .four-block{
         .inp{
           margin-bottom: 25px;
@@ -432,6 +502,21 @@
       margin-bottom: 40px;
     }
     form{
+      .file{
+        .file-inp{
+          .file-caption-name{
+            width: 414px;
+          }
+          .input-group-btn{
+            .btn-file{
+              width: 213px;
+            }
+            .fileinput-remove-button{
+              left: 385px;
+            }
+          }
+        }
+      }
       .four-block{
         justify-content: space-between;
         .inp{

@@ -34,7 +34,9 @@ $(document).ready(function(){
         $('.city').stop().toggleClass('open-blockP');
   });
 
-  // $("#input-b5").fileinput({showCaption: false, dropZoneEnabled: false});
+  $('.file-caption-name').attr("placeholder", "Файл не выбран")
+  $('.btn-file > span').text('Прикрепить')
+  $('.fileinput-remove-button > span').text('x')
 
   $(".close-pop").bind("click", function(event){
     $('.pop-up').removeClass('open-pop');
