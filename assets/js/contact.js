@@ -1,4 +1,15 @@
 
+$(document).ready(function(){
+ 
+    $(".title").bind("click", function(event){
+      $('.answer').slideToggle();
+      $(this).parent().toggleClass('open-quest');
+    });
+   
+  
+  });
+  
+  
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
           center: [59.9114037, 30.3487953],
@@ -7,14 +18,3 @@ ymaps.ready(function () {
           searchControlProvider: 'yandex#search'
       })
 });
-
-$(document).ready(function(){
- 
-    $(".title").bind("click", function(event){
-    //   $('.answer').slideToggle();
-      $(this).parent().toggleClass('open-quest');
-    });
-   
-  
-  });
-  
