@@ -111,13 +111,19 @@ main{
   }
 }
 
-@media (min-width: 768px) {
-  main{
+@media (min-width: 375px){
+  .main{
     .some-filter{
+      justify-content: space-around;
       p{
         width: 155px;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  main{
     .all-article{
       justify-content: space-between;
       .one-article{
@@ -200,6 +206,26 @@ main{
   main{
     h2{
       margin-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main{
+    .all-article{
+      .one-article{
+        max-width: 375px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  main{
+    .all-article{
+      .one-article{
+        max-width: 407px;
+      }
     }
   }
 }

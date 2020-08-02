@@ -252,6 +252,17 @@ footer{
     .one-category{
       max-width: 125px;
       width:100%;
+      position: relative;
+      &:before{
+        content: '';
+        width: 11px;
+        height: 12px;
+        background-color: #e94249;
+        position: absolute;
+        top: 45px;
+        left: 115px;
+        border-radius: 50%;
+      }
       &:nth-child(even){
         margin-top: 50px;
       }
@@ -469,8 +480,13 @@ footer{
           line-height: 58px;
           border-radius: 29px;
           border: 1px solid #8d9fc6;
-          padding: 0 20px;
+          padding: 0 40px 0 20px;
           background: transparent;
+        }
+        .abs-img{
+          position: absolute;
+          bottom: 17px;
+          right: 17px;
         }
       }
       .all-sel2{

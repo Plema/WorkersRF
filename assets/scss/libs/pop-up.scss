@@ -464,6 +464,16 @@
         }
       }
     }
+    .blu-text{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .one{
+        &:first-of-type{
+          margin-right: 60px;
+        }
+      }
+    }
   }
   .politic-pop{
     height: 630px;

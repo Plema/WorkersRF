@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('body').css('overflow','auto');
   });
 
-  $( ".showText-city" ).click(function(event) {
+  $( ".city > .top" ).click(function(event) {
     event.preventDefault();
     $('.city').stop().toggleClass('open-blockP');
   });

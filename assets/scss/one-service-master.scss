@@ -3,6 +3,39 @@ main{
     background: url('../img/master-mob.jpg');
     background-size: cover;
   }
+  .block-info{
+    .all-p{
+      height: 260px;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    .razvernut{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      cursor: pointer;
+      margin-top: 10px;
+      span{
+        color: #8d9fc6;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 5px;
+      }
+      i{
+        color: #8d9fc6;
+        font-size: 6px;
+      }
+    }
+  }
+  .without-razv{
+    .all-p{
+      height: auto;
+    }
+    .razvernut{
+      display: none;
+    }
+  }
   .our-services{
     margin-bottom: 65px;
     h2{
@@ -98,6 +131,14 @@ main{
     .top-banner{
       background: url('../img/master-desc.jpg') no-repeat 75%;
       background-size: cover;
+    }
+    .block-info{
+      .all-p{
+        height: auto;
+      }
+      .razvernut{
+        display: none;
+      }
     }
   }
 }

@@ -41,6 +41,27 @@ html {
     font-family: 'Gotham Pro';
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#kvFileinputModal{
+    display: none;
+}
 *:before,
 *:after {
     box-sizing: inherit;

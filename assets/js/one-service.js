@@ -48,4 +48,8 @@ $(document).ready(function(){
   });
 
 
+  $(".razvernut").bind("click", function(){
+    $('.all-p').css('height', 'auto')
+    $('.razvernut').css('display', 'none')
+  });
 });

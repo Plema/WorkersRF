@@ -130,8 +130,19 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     .one-category{
+      position: relative;
       max-width: 125px;
       width:100%;
+      &:before{
+        content: '';
+        width: 11px;
+        height: 12px;
+        background-color: #e94249;
+        position: absolute;
+        top: 45px;
+        left: 115px;
+        border-radius: 50%;
+      }
       &:nth-child(even){
         margin-top: 50px;
       }

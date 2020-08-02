@@ -52,6 +52,7 @@ main{
           align-items: center;
           justify-content: center;
           margin-right: 30px;
+          padding-left: 5px;
           i{
             color: #dfdfdf;
             font-size: 20px;
@@ -90,6 +91,48 @@ main{
         font-weight: 300;
         line-height: 24px;
       }
+    }
+  }
+  .check{
+    margin-bottom: 20px;
+    input{
+      display: none;
+    }
+    label{
+      display: flex;
+      p{
+        color: #868686;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        span{
+          text-decoration: underline;
+        }
+      }
+    }
+    input + label{
+      position: relative;
+      padding: 0px 0px 0px 15px; 
+      margin-top: 0px;
+    }
+    input + label:before{
+      position: relative;
+      content: '';
+      position: absolute; 
+      top: 5%; 
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #bebebe;
+      padding: 0px;
+      box-shadow: 0px 0px 1px 2px #ffffff inset;
+    }
+    input:checked + label:before{
+      background-color: #bebebe;
+      width: 10px;
+      height: 10px;
     }
   }
   .write-review-control{
@@ -162,6 +205,7 @@ main{
         }
         textarea{
           width: 100%;
+          max-width: 290px;
           height: 250px;
           border-radius: 29px;
           border: 1px solid #8d9fc6;
@@ -170,46 +214,52 @@ main{
           resize: none;
         }
       }
-      .check{
-        margin-bottom: 20px;
-        input{
-          display: none;
-        }
-        label{
-          display: flex;
-          p{
-            color: #868686;
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 14px;
-            span{
-              text-decoration: underline;
-            }
+    }
+  }
+  .write-control{
+    display: none;
+    textarea{
+      margin: 0 auto;
+      display: block;
+      resize: none;
+      padding: 25px 20px;
+      width: 290px;
+      height: 250px;
+      margin-bottom: 10px;
+      border-radius: 29px;
+      border: 1px solid #8d9fc6;
+    }
+    .for{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .inp{
+        width: 290px;
+        height: 58px;
+        border-radius: 29px;
+        border: 1px solid #8d9fc6;
+        margin-bottom: 10px;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 610px){
+  main{
+    .write-review-control{
+      form{
+        .for{
+          textarea{
+            max-width: 100%;
+            width: 100%;
           }
         }
-        input + label{
-          position: relative;
-          padding: 0px 0px 0px 15px; 
-          margin-top: 0px;
-        }
-        input + label:before{
-          position: relative;
-          content: '';
-          position: absolute; 
-          top: 5%; 
-          left: 0;
-          width: 10px;
-          height: 10px;
-          background-color: #ffffff;
-          border-radius: 50%;
-          border: 1px solid #bebebe;
-          padding: 0px;
-          box-shadow: 0px 0px 1px 2px #ffffff inset;
-        }
-        input:checked + label:before{
-          background-color: #bebebe;
-          width: 10px;
-          height: 10px;
+      }
+      .write-control{
+        textarea{
+          width: 100%;
         }
       }
     }
@@ -238,6 +288,14 @@ main{
           input + label:before{
             top: 12%;
           }
+        }
+      }
+      .write-control{
+        textarea{
+          margin-bottom: 25px;
+        }
+        .inp{
+          margin-bottom: 25px;
         }
       }
     }
@@ -325,6 +383,9 @@ main{
       }
     }
     .write-review-control{
+      .tabs{
+        margin-bottom: 45px;
+      }
       form{
         .stars{
           margin-bottom: 40px;
