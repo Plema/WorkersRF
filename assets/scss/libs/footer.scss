@@ -75,6 +75,12 @@ footer{
           transition: 0.5s;
           margin: 0 1px;
           margin-bottom: 15px;
+          &:nth-child(4){
+            margin-left: 20px;
+          }
+          &:nth-child(5){
+            margin-right: 20px;
+          }
           i{
             font-size: 18px;
             color: #ffffff;
@@ -320,6 +326,12 @@ footer{
           justify-content: flex-start;
           a{
             margin: 0 25px 15px 0;
+            &:nth-child(4){
+              margin: 0 25px 15px 0;
+            }
+            &:nth-child(5){
+              margin: 0 25px 15px 0;
+            }
           }
         }
       }
@@ -433,6 +445,15 @@ footer{
             margin-bottom: 0;
             &:not(:last-of-type){
               margin-right: 25px;
+            }
+            &:nth-child(4){
+              margin-right: 0;
+              margin-bottom: 0;
+              margin-right: 25px;
+            }
+            &:nth-child(5){
+              margin-right: 0;
+              margin-bottom: 0;
             }
           }
         }
