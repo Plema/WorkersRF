@@ -19,4 +19,7 @@ $(document).ready(function(){
     $(this).addClass('active-tab');
   });
  
+  $("#inp-reviews").mask("8(999) 999-9999");
+  $("#inp-reviews2").mask("8(999) 999-9999");
+
 });

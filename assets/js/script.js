@@ -90,4 +90,10 @@ $(document).ready(function(){
     $('body').css('overflow','hidden');
   });
 
+  $("#check1-contactMenedg").mask("8(999) 999-9999");
+  $("#check1-contactMenedgBig").mask("8(999) 999-9999");
+  $("#numb3").mask("8(999) 999-9999");
+  $("#inp-footer").mask("8(999) 999-9999");
+  $("#inp-popup1").mask("8(999) 999-9999");
+  $("#phone-p").mask("8(999) 999-9999");
 });
