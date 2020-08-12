@@ -213,8 +213,10 @@ main{
 @media (min-width: 1400px) {
   main{
     .all-article{
+      justify-content: flex-start;
       .one-article{
         max-width: 375px;
+        margin-right: 10px;
       }
     }
   }
@@ -225,6 +227,7 @@ main{
     .all-article{
       .one-article{
         max-width: 407px;
+        margin-right: 19px;
       }
     }
   }
