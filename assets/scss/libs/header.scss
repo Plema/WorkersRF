@@ -145,6 +145,7 @@ header{
             i{
               color: #ffffff;
               font-size: 6px;
+              transition: 0.5s;
             }
           }
           .big-nav{
@@ -167,6 +168,16 @@ header{
                 }
               }
             }
+          }
+        }
+        .open-serv{
+          .lin{
+            i{
+              transform: rotate(90deg);
+            }
+          }
+          .big-nav{
+            display: none;
           }
         }
       }

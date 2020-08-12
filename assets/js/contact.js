@@ -2,7 +2,7 @@
 $(document).ready(function(){
  
     $(".title").bind("click", function(event){
-      $('.answer').slideToggle();
+      $(this).parent().find('.answer').slideToggle();
       $(this).parent().toggleClass('open-quest');
     });
    

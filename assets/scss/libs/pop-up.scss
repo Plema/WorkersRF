@@ -104,7 +104,7 @@
 .vacancy{
   transform: translate(0, -50%);
   height: 450px;
-  overflow-y: scroll;
+  overflow-y: auto;
   .file{
     .file-inp{
       .control-label{
@@ -252,7 +252,7 @@
 .discount-pop{
   transform: translate(0, -50%);
   height: 450px;
-  overflow-y: scroll;
+  overflow-y: auto;
   p{
     color: #2b2b2b;
     font-size: 16px;
@@ -341,7 +341,7 @@
 .politic-pop{
   transform: translate(0, -50%);
   height: 450px;
-  overflow-y: scroll;
+  overflow-y: auto;
   p{
     font-size: 16px;
     font-weight: 300;

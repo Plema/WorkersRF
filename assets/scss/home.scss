@@ -917,6 +917,8 @@ footer{
         .one-rev{
           max-width: 45%;
           .text{
+            min-height: 219px;
+            min-width: 388px;
             &:before{
               margin-left: -155px;
             }
@@ -1090,6 +1092,7 @@ footer{
             padding-bottom: 70px;
             padding-top: 30px;
             margin-bottom: 40px;
+            min-height: 269px;
             p{
               font-size: 18px;
             }
@@ -1100,13 +1103,16 @@ footer{
   }
   .calculation{
     padding-top: 105px;
-    padding-bottom: 100px;
+    padding-bottom: 125px;
     h2{
       strong{
         display: block;
       }
     }
     form{
+      .but{
+        margin-top: 55px;
+      }
       .fieldset{
         justify-content: space-between;
         &:first-of-type{
@@ -1123,6 +1129,10 @@ footer{
             .sel2{
               max-width: 278px;
               width: 100%;
+              p{
+                padding-top: 0;
+                padding-bottom: 0;
+              }
             }
           }
         }
@@ -1169,6 +1179,7 @@ footer{
         .one-rev{
           max-width: 440px;
           .text{
+            min-width: 440px;
             &:before{
               margin-left: -200px;
             }
