@@ -22,7 +22,7 @@ $(document).ready(function(){
       });
       $('.slick-arrow').empty();
       $('.slick-dots > li > button').empty();
-    } else if($(window).width() < '1280'){
+    } else if($(window).width() < '1280' && $(window).width() > '1024'){
       $( ".showText" ).click(function(event) {
         event.preventDefault();
       $('.sel').stop().slideToggle();
