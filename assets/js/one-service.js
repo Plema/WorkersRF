@@ -36,12 +36,10 @@ $(document).ready(function(){
       });
       } else {
         $(".select-desc > p").bind("click", function(event){
-
+          $('.select-desc > p').removeClass('active');
           $(this).parent().parent().find(".all-block-info").removeClass().addClass("all-block-info");
           var $thisClass = $(this).attr("class");
           var $some = $(this).parent().parent().find(".all-block-info").addClass($thisClass + "-show");
-
-          $('.select-desc > p').removeClass('active');
           $(this).addClass('active');
         });
       }
