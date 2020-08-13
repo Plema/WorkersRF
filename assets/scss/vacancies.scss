@@ -46,6 +46,8 @@ main{
       transition: 0.5s;
       box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0);
       cursor: pointer;
+      max-width: 100%;
+      width: 100%;
       .text{
         padding-left: 25px;
         position: relative;

@@ -101,7 +101,41 @@ main{
       margin-bottom: 75px;
     }
     .all-sales{
+      justify-content: flex-start;
       .one-sale{
+        max-width: 402px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  main{
+    .all-sales{
+      .one-sale{
+        margin-right: 120px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  main{
+    .all-sales{
+      .one-sale{
+        margin-right: 10px;
+        max-width: 375px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  main{
+    .all-sales{
+      .one-sale{
+        margin-right: 24px;
         max-width: 402px;
       }
     }

@@ -90,10 +90,10 @@ $(document).ready(function(){
     $('body').css('overflow','hidden');
   });
 
-  $("#check1-contactMenedg").mask("+7 (___)___ __ __");
-  $("#check1-contactMenedgBig").mask("+7 (___)___ __ __");
-  $("#numb3").mask("+7 (___)___ __ __");
-  $("#inp-footer").mask("+7 (___)___ __ __");
-  $("#inp-popup1").mask("+7 (___)___ __ __");
-  $("#phone-p").mask("+7 (___)___ __ __");
+  $("#check1-contactMenedg").mask("+7 (999)999 99 99");
+  $("#check1-contactMenedgBig").mask("+7 (999)999 99 99");
+  $("#numb3").mask("+7 (999)999 99 99");
+  $("#inp-footer").mask("+7 (999)999 99 99");
+  $("#inp-popup1").mask("+7 (999)999 99 99");
+  $("#phone-p").mask("+7 (999)999 99 99");
 });

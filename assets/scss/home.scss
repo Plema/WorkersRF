@@ -474,6 +474,10 @@ footer{
         margin-bottom: 30px;
         position: relative;
         max-width: 290px;
+        box-shadow: none;
+        &:invalid{
+          box-shadow: none;
+        }
         input{
           width: 290px;
           height: 58px;
