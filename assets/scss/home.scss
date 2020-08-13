@@ -605,6 +605,10 @@ footer{
             background: transparent;
             padding-left: 20px;
             color: #333333;
+            box-shadow: none;
+            &:invalid{
+              box-shadow: none;
+            }
           }
         }
         .sel-time{
