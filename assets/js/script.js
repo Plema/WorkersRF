@@ -90,10 +90,10 @@ $(document).ready(function(){
     $('body').css('overflow','hidden');
   });
 
-  $("#check1-contactMenedg").mask("8-(903)-123-45-67");
-  $("#check1-contactMenedgBig").mask("8-(903)-123-45-67");
-  $("#numb3").mask("8-(903)-123-45-67");
-  $("#inp-footer").mask("8-(903)-123-45-67");
-  $("#inp-popup1").mask("8-(903)-123-45-67");
-  $("#phone-p").mask("8-(903)-123-45-67");
+  $("#check1-contactMenedg").mask("+7 (___)___ __ __");
+  $("#check1-contactMenedgBig").mask("+7 (___)___ __ __");
+  $("#numb3").mask("+7 (___)___ __ __");
+  $("#inp-footer").mask("+7 (___)___ __ __");
+  $("#inp-popup1").mask("+7 (___)___ __ __");
+  $("#phone-p").mask("+7 (___)___ __ __");
 });
