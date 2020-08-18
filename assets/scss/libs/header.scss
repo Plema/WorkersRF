@@ -1,5 +1,7 @@
 header{
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 40;
   .burger-menu{
     position: absolute;
     top: 0;
@@ -11,6 +13,7 @@ header{
     padding: 65px 15px;
     opacity: 0;
     transition: 0.5s;
+    display: none;
     .close-burg{
       font-size: 25px;
       color: #ffffff;
@@ -36,6 +39,7 @@ header{
         i{
           font-size: 40px;
           color: #ffffff;
+          line-height: 20px;
         }
       }
       .city{
@@ -221,9 +225,12 @@ header{
   .open-burger-menu{
     opacity: 1;
     z-index: 70;
+    display: block;
   }
   .top-header{
     padding: 20px 0 15px;
+    background: #ffffff;
+    position: relative;
     .top-mob{
       display: flex;
       align-items: center;
@@ -269,6 +276,8 @@ header{
   .bottom-header{
     padding: 15px 0;
     background-color: #3a5da8;
+    z-index: 40;
+    position: relative;
     .all-desc{
       .logo{
         display: none;
@@ -833,6 +842,7 @@ header{
             i{
               font-size: 40px;
               color: #ffffff;
+              line-height: 20px;
             }
           }
         }

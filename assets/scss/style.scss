@@ -172,6 +172,9 @@ h4 {}
         }
     }
 }
+main{
+    padding-top: 135px;
+}
 
 @media (min-width: 768px) {
     .container {
@@ -180,6 +183,9 @@ h4 {}
     }
     h2{
         text-align: center;
+    }
+    main{
+        padding-top: 160px;
     }
 }
 
@@ -192,6 +198,9 @@ h4 {}
     }
     h1{
         font-size: 52px;
+    }
+    main{
+        padding-top: 155px;
     }
 }
 
@@ -212,6 +221,9 @@ h4 {}
 @media (min-width: 1400px) {
     .container {
         width: 1160px;
+    }
+    main{
+        padding-top: 170px;
     }
 }
 
