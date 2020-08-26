@@ -89,11 +89,19 @@ $(document).ready(function(){
     $('.back-dark').addClass('open-back-dark');
     $('body').css('overflow','hidden');
   });
+    
+  $(".open-pop-call").bind("click", function(event){
+    $('.pop-up').removeClass('open-pop');
+    $('.pop-call').addClass('open-pop');
+    $('.back-dark').addClass('open-back-dark');
+    $('body').css('overflow','hidden');
+  });
 
   $("#check1-contactMenedg").mask("+7 (999)999 99 99");
   $("#check1-contactMenedgBig").mask("+7 (999)999 99 99");
   $("#contactMenedgBig").mask("+7 (999)999 99 99");
   $("#numb3").mask("+7 (999)999 99 99");
+  $("#call").mask("+7 (999)999 99 99");
   $("#inp-footer").mask("+7 (999)999 99 99");
   $("#inp-popup1").mask("+7 (999)999 99 99");
   $("#phone-p").mask("+7 (999)999 99 99");

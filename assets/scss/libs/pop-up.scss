@@ -101,6 +101,35 @@
     }
   }
 }
+.pop-call{
+  transform: translate(0, -50%);
+  overflow-y: auto;
+  height: auto;
+  h4{
+    text-align: center;
+  }
+  form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .inp{
+      margin-bottom: 15px;
+      width: 260px;
+      height: 61px;
+      line-height: 61px;
+      border-radius: 29px;
+      border: 1px solid #8d9fc6;
+      padding: 0 15px;
+    }
+    div{
+      width: 100%;
+      .white-button{
+        width: 260px;
+      }
+    }
+  }
+}
 .vacancy{
   transform: translate(0, -50%);
   height: 450px;
@@ -478,6 +507,11 @@
   .politic-pop{
     height: 630px;
   }
+  .pop-call{
+    form{
+      justify-content: space-between;
+    }
+  }
 }
 
 @media (min-width: 1024px){
@@ -488,6 +522,17 @@
   .discount-pop{
     p{
       font-size: 18px;
+    }
+  }
+  .pop-call{
+    h4{
+      margin-bottom: 35px;
+    }
+    form{
+      .inp{
+        width: 310px;
+        margin-bottom: 30px;
+      }
     }
   }
   .primechanie-pop{

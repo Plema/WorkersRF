@@ -39,6 +39,7 @@ html {
     -o-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Gotham Pro';
+    scroll-behavior: smooth;
 }
 
 input::-webkit-outer-spin-button,
@@ -175,6 +176,51 @@ h4 {}
 main{
     padding-top: 135px;
 }
+.all-bot-fixed{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 90000;
+    .phone{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        box-shadow: 0 0 10px 1px rgba(56,56,56, .5);
+        cursor: pointer;
+        img{
+            max-width: 20px;
+        }
+        p{
+            display: none;
+            font-weight: 500;
+        }
+    }
+    .to-top{
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        width: 40px;
+        height: 40px;
+        transform: rotate(180deg);
+        text-align: center;
+        padding-right: 8px;
+        box-shadow: 0 0 10px 1px rgba(56,56,56, .5);
+        i{
+            color: #3a5da8;
+            font-size: 8px;
+        }
+    }
+}
 
 @media (min-width: 768px) {
     .container {
@@ -202,6 +248,20 @@ main{
     main{
         padding-top: 155px;
     }
+    .all-bot-fixed{
+        .phone{
+            width: auto;
+            padding: 0 10px;
+            margin-right: 15px;
+            img{
+                margin-right: 10px;
+            }
+            p{
+                font-size: 12px;
+                display: block;
+            }
+        }
+    }
 }
 
 @media (min-width: 1280px) {
@@ -224,6 +284,13 @@ main{
     }
     main{
         padding-top: 170px;
+    }
+    .all-bot-fixed{
+        .phone{
+            p{
+                font-size: 14px;
+            }
+        }
     }
 }
 
