@@ -624,6 +624,62 @@ footer{
           p{
             padding-left: 20px;
           }
+          .pop-clock{
+            position: absolute;
+            left: 0;
+            top: 65px;
+            z-index: -1;
+            opacity: 0;
+            padding: 15px;
+            border-radius: 29px;
+            border: 1px solid #8d9fc6;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            justify-content: space-between;
+            transition: 0.5s;
+            .top, .bot{
+              width: 15px;
+              height: 15px;
+              border-radius: 50px;
+              text-align: center;
+              border: 1px solid #8d9fc6;
+              font-size: 12px;
+              font-weight: 500;
+            }
+            .top{
+              transform: rotate(-90deg);
+            }
+            .bot{
+              transform: rotate(90deg);
+            }
+            p{
+              display: none;
+              padding: 13px 0;
+            }
+            .show{
+              display: block;
+            }
+            .day{
+              min-width: 130px;
+            }
+            .hour{
+              min-width: 50px;
+            }
+            .minute {
+              min-width: 50px;
+            }
+            .one{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .open-clock{
+            opacity: 1;
+            z-index: 75;
+          }
           .showText3{
             line-height: 59px;
             width: 146px;

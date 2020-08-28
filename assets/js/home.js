@@ -41,18 +41,8 @@ $(document).ready(function(){
 
   $( ".showText3" ).click(function(event) {
     event.preventDefault();
-   $('.sel3').stop().slideToggle();
-   $(this).parent().toggleClass('open-sel')
+   $('.pop-clock').toggleClass('open-clock');
   });
-  $( ".hiddenText3" ).click(function(event) {
-      var x = $(this).text();
-      $(this).parent().parent().toggleClass('open-sel')
-      var y = $(".showText3").text();
-        $(this).text(y);
-        $(".showText3").text(x);
-      $('.sel3').stop().slideToggle();
-  });
-
   
   $(".quantity-arrow-minus").bind("click", function(event){
     event.preventDefault();

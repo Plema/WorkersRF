@@ -53,6 +53,11 @@ main{
     }
     .one-question{
       margin-bottom: 40px;
+      &:first-of-type{
+        .answer{
+          display: block;
+        }
+      }
       .title{
         display: flex;
         align-items: center;
