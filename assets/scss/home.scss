@@ -1256,6 +1256,18 @@ footer{
       }
     }
   }
+  .calculation{
+    form{
+      .fieldset{
+        .inp{
+          width: 220px;
+          input{
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1600px) {
