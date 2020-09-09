@@ -32,6 +32,12 @@
   transition: 0.5s;
   padding: 45px 15px;
   display: none;
+  ul li, ol li{
+    list-style: none;
+  }
+  ul, ol{
+    padding-left: 0;
+  }
   .close-pop{
     position: absolute;
     top: 10px;

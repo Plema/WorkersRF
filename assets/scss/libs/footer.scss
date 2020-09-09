@@ -2,6 +2,12 @@ footer{
   background-color: #3a5da8;
   padding-top: 45px;
   padding-bottom: 5px;
+  ul li, ol li{
+    list-style: none;
+  }
+  ul, ol{
+    padding-left: 0;
+  }
   .all-footer{
     .left-part{
       .logo{
