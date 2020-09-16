@@ -257,6 +257,7 @@ main{
             background: #3a5da8;
             color: #ffffff;
             font-weight: 700;
+            justify-content: center;
           }
         }
         .block{
@@ -288,55 +289,8 @@ main{
             }
           }
         }
-        .first-show {
-          .first {
-            display: flex;
-          }
-        }
-        .second-show {
-          .second {
-            display: flex;
-          }
-        }
-        .third-show {
-          .third {
-            display: flex;
-          }
-        }
-        .fourth-show {
-          .fourth {
-            display: flex;
-          }
-        }
-        .fifth-show {
-          .fifth {
-            display: flex;
-          }
-        }
-        .sixth-show {
-          .sixth {
-            display: flex;
-          }
-        }
-        .six-show {
-          .six {
-            display: flex;
-          }
-        }
-        .eight-show{
-          .eight{
-            display: flex;
-          }
-        }
-        .nine-show{
-          .nine{
-            display: flex;
-          }
-        }
-        .ten-show{
-          .ten{
-            display: flex;
-          }
+        .active{
+          display: flex;
         }
       }
     }
@@ -369,6 +323,9 @@ main{
               margin-bottom: 40px;
             }
           }
+        }
+        .active{
+          display: flex;
         }
       }
     }

@@ -76,10 +76,10 @@ $(document).ready(function(){
       $(".select-desc > p").bind("click", function(event){
 
         $('.select-desc > p').removeClass('active');
-        $(this).parent().parent().find(".all-block-info").removeClass().addClass("all-block-info");
-        var $thisClass = $(this).attr("class");
-        var $some = $(this).parent().parent().find(".all-block-info").addClass($thisClass + "-show");
         $(this).addClass('active');
+        var dataS = $(this).data('select');
+        $('.one-block').removeClass('active');
+        $('.' + dataS).addClass('active');
         
       });
     }

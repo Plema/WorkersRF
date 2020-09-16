@@ -3,10 +3,10 @@ $(document).ready(function(){
   
   $(".all-title > h5").bind("click", function(){
     $('.all-title > h5').removeClass('active');
-    $(this).parent().parent().find(".all-blocks").removeClass().addClass("all-blocks");
-    var $thisClass = $(this).attr("class");
-    var $some = $(this).parent().parent().find(".all-blocks").addClass($thisClass + "-show");
     $(this).addClass('active');
+    var dataS = $(this).data('select');
+    $('.et').removeClass('active');
+    $('.' + dataS).addClass('active');
   });
 
   function windowSize(){
@@ -22,7 +22,7 @@ $(document).ready(function(){
       });
       $('.slick-arrow').empty();
       $('.slick-dots > li > button').empty();
-    } else if($(window).width() < '1280' && $(window).width() > '1024'){
+
       $( ".showText" ).click(function(event) {
         event.preventDefault();
       $('.sel').stop().slideToggle();
@@ -34,13 +34,27 @@ $(document).ready(function(){
             $(".showText").text(x);
           $('.sel').stop().slideToggle();
       });
+
+    } else if($(window).width() < '1280' && $(window).width()>='1024'){
+      $( ".showText" ).click(function(event) {
+        event.preventDefault();
+      $('.sel').stop().slideToggle();
+      });
+      $( ".hiddenText" ).click(function(event) {
+          var x = $(this).text();
+          var y = $(".showText").text();
+            $(this).text(y);
+            $(".showText").text(x);
+          $('.sel').stop().slideToggle();
+      });
+
       } else {
         $(".select-desc > p").bind("click", function(event){
           $('.select-desc > p').removeClass('active');
-          $(this).parent().parent().find(".all-block-info").removeClass().addClass("all-block-info");
-          var $thisClass = $(this).attr("class");
-          var $some = $(this).parent().parent().find(".all-block-info").addClass($thisClass + "-show");
           $(this).addClass('active');
+          var dataS = $(this).data('select');
+          $('.one-block').removeClass('active');
+          $('.' + dataS).addClass('active');
         });
       }
 }

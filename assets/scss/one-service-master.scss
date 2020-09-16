@@ -212,10 +212,16 @@ main{
           background-color: #3a5da8;
           font-weight: 700;
           color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
       .block {
         display: none;
+      }
+      .active{
+        display: flex;
       }
       .all-block-info{
         max-width: 1145px;
@@ -224,54 +230,7 @@ main{
         .sh{
           display: none;
         }
-      }
-      .first-show {
-        .first {
-          display: flex;
-        }
-      }
-      .second-show {
-        .second {
-          display: flex;
-        }
-      }
-      .third-show {
-        .third {
-          display: flex;
-        }
-      }
-      .fourth-show {
-        .fourth {
-          display: flex;
-        }
-      }
-      .fifth-show {
-        .fifth {
-          display: flex;
-        }
-      }
-      .six-show {
-        .six {
-          display: flex;
-        }
-      }
-      .seven-show {
-        .seven {
-          display: flex;
-        }
-      }
-      .eight-show{
-        .eight{
-          display: flex;
-        }
-      }
-      .nine-show{
-        .nine{
-          display: flex;
-        }
-      }
-      .ten-show{
-        .ten{
+        .active{
           display: flex;
         }
       }
