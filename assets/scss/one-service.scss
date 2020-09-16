@@ -113,6 +113,7 @@ main{
   }
   .block-info{
     margin-bottom: 65px;
+    margin-top: 25px;
     h2{
       margin-bottom: 25px;
       text-align: left;
@@ -235,8 +236,9 @@ main{
         .all-title{
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: space-around;
           flex-wrap: wrap;
+          margin-bottom: 20px;
           h5{
             width: 150px;
             height: 58px;
@@ -249,7 +251,7 @@ main{
             font-weight: 400;
             background: transparent;
             transition: 0.5s;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             cursor: pointer;
           }
           .active{

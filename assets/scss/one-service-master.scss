@@ -4,6 +4,7 @@ main{
     background-size: cover;
   }
   .block-info{
+    margin-top: 25px;
     .all-p{
       height: 260px;
       overflow: hidden;
@@ -191,7 +192,8 @@ main{
       .select-desc{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 65px;
         p{
           border: 1px solid #8d9fc6;
@@ -206,6 +208,7 @@ main{
           transition: 0.5s;
           cursor: pointer;
           margin: 0 2px;
+          margin-bottom: 15px;
         }
         .active{
           box-shadow: 0 14px 27px 1px rgba(56, 56, 56, 0.2);
