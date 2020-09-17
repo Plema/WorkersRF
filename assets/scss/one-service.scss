@@ -74,7 +74,7 @@ main{
     }
   }
   .opened-time{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     .one-block{
       max-width: 330px;
       width: 100%;
@@ -211,13 +211,16 @@ main{
       align-items: flex-start;
       justify-content: flex-end;
       margin-top: -50px;
-      margin-bottom: 100px;
+      margin-bottom: 20px;
       .one-block{
         margin: 0;
         &:not(:last-of-type){
           margin-right: 15px;
         }
       }
+    }
+    .block-info{
+      margin-top: 55px;
     }
   }
 }

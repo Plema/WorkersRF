@@ -616,11 +616,15 @@ header{
                 position: absolute;
                 top: 45px;
                 left: -300%;
-                display: flex;
-                align-items: flex-start;
                 padding: 10px 15px 25px 15px;
                 max-width: 1280px;
                 width: 100%;
+                div{
+                  display: flex;
+                  align-items: flex-start;
+                  max-height: 400px ;
+                  overflow-y: auto;
+                }
                 .red-link{
                   position: absolute;
                   right: 30px;
@@ -632,6 +636,7 @@ header{
                 }
                 ol{
                   width: 25%;
+                  padding-right: 10px;
                   h5{
                     color: #3a5da8;
                     font-size: 14px;
