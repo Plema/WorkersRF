@@ -163,11 +163,9 @@ h4 {}
     flex-wrap: wrap;
     margin-top: 25px;
     margin-bottom: 30px;
+    padding-left: 0;
     ul li, ol li{
         list-style: none;
-      }
-      ul, ol{
-        padding-left: 0;
       }
     li{
         list-style: none;

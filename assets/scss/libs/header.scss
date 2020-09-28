@@ -542,8 +542,22 @@ header{
                 font-size: 14px;
                 font-weight: 400;
                 transition: 0.5s;
+                position: relative;
+                padding-bottom: 2px;
+                &:before{
+                  position: absolute;
+                  bottom: 0;
+                  width: 0;
+                  height: 1px;
+                  background: #3C5EA9;
+                  content: '';
+                  transition: 0.5s;
+                }
                 &:hover{
                   color: #3a5da8;
+                  &:before{
+                    width: 100%;
+                  }
                 }
               }
             }
@@ -651,8 +665,22 @@ header{
                       font-size: 14px;
                       font-weight: 400;
                       transition: 0.5s;
+                      position: relative;
+                      padding-bottom: 2px;
+                      &:before{
+                        position: absolute;
+                        bottom: 0;
+                        width: 0;
+                        height: 1px;
+                        background: #3C5EA9;
+                        content: '';
+                        transition: 0.5s;
+                      }
                       &:hover{
-                        color: #8d9fc6;
+                        color: #3C5EA9;
+                        &:before{
+                          width: 100%;
+                        }
                       }
                     }
                   }
@@ -758,13 +786,13 @@ header{
               background-color: #ffffff;
               opacity: 0;
               transition: 0.5s;
-              padding: 25px 60px;
+              padding: 25px;
               width: 840px;
               max-width: 840px;
               right: -50000%;
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              justify-content: space-around;
               top: 45px;
               li{
                 a{
@@ -882,7 +910,7 @@ header{
             .with-services{
               .lin{
                 &:after{
-                  top: 160%;
+                  top: 150%;
                 }
               }
             }
