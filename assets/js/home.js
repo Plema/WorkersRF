@@ -44,21 +44,6 @@ $(document).ready(function(){
    $('.pop-clock').toggleClass('open-clock');
   });
   
-  $(".quantity-arrow-minus").bind("click", function(event){
-    event.preventDefault();
-    var $quantityNum = $(this).parent().parent().find(".quantity-num");
-    if ($quantityNum.val() > 1){
-      $quantityNum.val(+$quantityNum.val() - 1);
-    }
-  });
-  $(".quantity-arrow-plus").bind("click", function(event){
-    event.preventDefault();
-      var $quantityNum = $(this).parent().parent().find(".quantity-num");
-      $quantityNum.val(+$quantityNum.val() + 1);
-  });
-
-
-
   function windowSize(){
     if ($(window).width() < '1280'){
         $( ".showText" ).click(function(event) {
@@ -98,5 +83,78 @@ $(document).ready(function(){
     $('body').css('overflow','hidden');
   });
 
+  
+$(".quantity-arrow-minus2").bind("click", function(){
+  var $quantityNum = $(this).parent().find(".quantity-num2");
+    if ($quantityNum.val() > 1){
+      $quantityNum.val(+$quantityNum.val() - 1);
+    }
+  });
+  $(".quantity-arrow-plus2").bind("click", function(){
+  var $quantityNum = $(this).parent().find(".quantity-num2");
+      $quantityNum.val(+$quantityNum.val() + 1);
+  });
 
+  $('#select-workers').ddslick({
+    imagePosition: "left",
+  });
+
+
+  $(".top-input").bind("click", function(){
+    $('.top-input').removeClass('onfocus')
+    $(this).addClass('onfocus')
+  });
+
+  $(".top-input > .right-div").bind("click", function(){
+    $('.all-map').css('display','block')
+  });
+
+  $(".close-map").bind("click", function(){
+    $('.all-map').css('display','none')
+  });
+
+
+  $('.datepicker1').datepicker({
+    inline: true,
+  })
+
+  $(".inputs").bind("click", function(){
+    $('.date-time-pop').addClass('open-pop');
+    $('.blue-border').addClass('smoke')
+  });
+
+  $(".smoke").bind("click", function(){
+    $('.date-time-pop').removeClass('open-pop');
+    $('.blue-border').removeClass('smoke')
+  });
+
+  $( ".hurry-up > button" ).click(function(event) {
+    event.preventDefault();
+    $('.hurry-up > button').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $( ".yes-order" ).click(function(event) {
+    event.preventDefault();
+    $('.date-time-pop').removeClass('open-pop');
+    $('.blue-border').removeClass('smoke')
+  });
 });
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map2', {
+          center: [59.911494, 30.350597],
+          zoom: 13
+      }, {
+          searchControlProvider: 'yandex#search'
+      })
+  
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        balloonContent: 'ул. Курская 21Б'
+      }, {
+          iconLayout: 'default#image',
+      }),
+      myMap.geoObjects
+          .add(myPlacemark);
+  });
+

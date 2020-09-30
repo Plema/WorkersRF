@@ -107,4 +107,5 @@ $(document).ready(function(){
   $("#phone-p").mask("+7 (999)999 99 99");
   $("#inp-reviews2").mask("+7 (999)999 99 99");
   $("#inp-reviews").mask("+7 (999)999 99 99");
+  $("#numb-form2").mask("+7 (999)999 99 99");
 });

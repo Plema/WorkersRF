@@ -8,11 +8,13 @@
   <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
   <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
   <link rel="stylesheet" href="css/datapicker.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/fileinput.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/contact-menedg.min.css" data-inprogress="">
   <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=db64d94d-cf93-48b4-b626-000c4ad108a1" type="text/javascript"></script>
 </head>
 
 <body>
@@ -565,94 +567,93 @@
     <div class="container">
       <h2><strong>Стоимость заказа</strong> для частных лиц и организаций</h2>
       <form action="">
-        <div class="fieldset">
-          <div class="inp">
-            <label for="name1">Адрес и контакты</label>
-            <input type="text" id="name1" placeholder="Город">
-            <img src="img/pin.png" alt="" class="abs-img">
+        <div class="left-part blue-border">
+          <div class="top-input">
+            <img src="img/placeholder.png" alt="">
+            <input type="text" placeholder="Город" autocomplete="off">
+            <div class="right-div">
+              <p>Дом</p>
+              <img src="img/pin2.png" alt="">
+            </div>
           </div>
-          <div class="inp">
-            <label></label>
-            <input type="text" placeholder="Улица">
-            <img src="img/pin.png" alt="" class="abs-img">
-          </div>
-          <div class="inp">
-            <label></label>
-            <input type="text" placeholder="Номер дома">
-            <img src="img/pin.png" alt="" class="abs-img">
-          </div>
-          <div class="inp">
-            <label for="name2">Ваше имя</label>
-            <input type="text" id="name2" placeholder="Представьтесь">
-          </div>
-          <div class="inp">
-            <label for="numb3">Телефон</label>
-            <input type="text" id="numb3" placeholder="Ваш номер">
+          <div class="top-input">
+            <img src="img/plus-plus.png" alt="">
+            <input type="text" placeholder="Улица" autocomplete="off">
+            <div class="right-div">
+              <p>Дом</p>
+              <img src="img/pin2.png" alt="">
+            </div>
           </div>
         </div>
-        <div class="fieldset">
-          <div class="all-sel2">
-            <label>Подбор рабочих</label>
-            <div class="select2">
-              <img src="img/arrow3.png" alt="">
-              <p class="showText2">Разнорабочий</p>
-              <div class="sel2">
-                <p class="hiddenText2">Грузчик</p>
-                <p class="hiddenText2">Услуги плиточника</p>
-                <p class="hiddenText2">Сантехник</p>
-                <p class="hiddenText2">Электрик</p>
-                <p class="hiddenText2">Водитель</p>
-              </div>
-            </div>
+        <div class="blue-border center-part">
+          <h6>Грузчики</h6>
+          <div class="quantity-block">
+            <button class="quantity-arrow-minus2"> - </button>
+            <input class="quantity-num2" type="number" value="2">
+            <button class="quantity-arrow-plus2"> + </button>
           </div>
-          <div class="all-quantity">
-            <div class="one-quan">
-              <h5>Количество рабочих</h5>
-              <div class="func">
-                <button class="quantity-arrow-minus"> - </button>
-                <input class="quantity-num" type="number" value="5">
-                <button class="quantity-arrow-plus"> + </button>
-              </div>
-            </div>
-            <div class="one-quan">
-              <h5>Количество часов</h5>
-              <div class="func">
-                <button class="quantity-arrow-minus"> - </button>
-                <input class="quantity-num" type="number" value="2">
-                <button class="quantity-arrow-plus"> + </button>
-              </div>
-            </div>
-          </div>
-          <div class="data-time">
-            <label>Время и длительность</label>
-            <div class="dates">
-              <img src="img/calendar.png" alt="">
-              <input type="text" class="datepicker-here date" placeholder="27.04.2020">
-            </div>
-            <div class="sel-time">        
-              <div class="pop-clock">
-                <div class="hour one">
-                  <span class="top">></span>
-                  <p class="show">15</p>
-                  <span class="bot">></span>
-                </div>
-                <strong>:</strong>
-                <div class="minute one">
-                  <span class="top">></span>
-                  <p class="show">15</p>
-                  <span class="bot">></span>
-                </div>
-              </div>
-              <img src="img/clock.png" alt="">
-              <p class="showText3">14:00</p>
-            </div>
-          </div>
-          <span class="primechanie">+  Примечание к заказу</span>
+          <select name="" id="select-workers">
+            <option value="" data-imagesrc="img/engineer.png">Рабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Вывоз мусора</option>
+            <option value="" data-imagesrc="img/engineer.png">Разнорабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Аренда спецтехники</option>
+            <option value="" data-imagesrc="img/engineer.png">Рабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Вывоз мусора</option>
+            <option value="" data-imagesrc="img/engineer.png">Разнорабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Аренда спецтехники</option>
+            <option value="" data-imagesrc="img/engineer.png">Рабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Вывоз мусора</option>
+            <option value="" data-imagesrc="img/engineer.png">Разнорабочие</option>
+            <option value="" data-imagesrc="img/truck_.png">Аренда спецтехники</option>
+          </select>
         </div>
-        <div class="but">
-          <a href="javascript:void(0)" class="gradient-button open-accept">Заказать</a>
+        <div class="right-part">
+          <div class="blue-border date-time-block">
+            <div class="date-time">
+              <div class="date-time-pop">
+                <input type="text" class="datepicker1" data-position="right top">
+                <div class="block-clock">
+                  <div class="clock">
+
+                  </div>
+                  <p>срочная подача через </p>
+                  <div class="hurry-up">
+                    <button>1 час</button>
+                    <button>2 часа</button>
+                    <button>3 часа</button>
+                    <button>4 часа</button>
+                  </div>
+                  <button class="yes-order">Подтвердить</button>
+                </div>
+              </div>
+              <h6>дата и время</h6>
+              <div class="inputs">
+                <input type="text" value="22.07">
+                <input type="text" value="12:30">
+              </div>
+            </div>
+            <div class="duration">
+              <h6>длительность</h6>
+              <div class="quantity-block">
+                <button class="quantity-arrow-minus2"> - </button>
+                <input class="quantity-num2" type="number" value="2">
+                <button class="quantity-arrow-plus2"> + </button>
+              </div>
+            </div>
+          </div>
+          <div class="blue-border enter-phone">
+            <div>
+              <h6>номер телефона</h6>
+              <input type="text" id="numb-form2" placeholder="+7 (___)___ __ __">
+            </div>
+            <button class="gradient-button open-accept">Заказать за 3 450 </button>
+          </div>
         </div>
       </form>
+      <div class="all-map">
+        <p class="close-map">закрыть</p>
+        <div class="map2" id="map2"></div>
+      </div>
     </div>
   </section>
 
@@ -905,11 +906,15 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
+
+
   <!-- Скрипты -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/fileinput.min.js"></script>
+  <script src="js/ddslick.js"></script>
   <script src="js/datapicker.min.js"></script>
+  <script src="js/mobiscroll.jquery.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/script.min.js"></script>
   <script src="js/home.min.js"></script>
