@@ -139,6 +139,32 @@ $(".quantity-arrow-minus2").bind("click", function(){
     $('.date-time-pop').removeClass('open-pop');
     $('.blue-border').removeClass('smoke')
   });
+
+  $( ".all-day > .one-day" ).click(function(event) {
+    event.preventDefault();
+    $('.all-day > .one-day').removeClass('active-day');
+    $(this).addClass('active-day')
+  });
+
+  $( ".otkr-calendar" ).click(function() {
+    $('.calendar').css('transform','scale(0)');
+    $('.calendar').css('display','none');
+    $('.datepicker-inline').css('transform','scale(1)');
+    $('.datepicker-inline').css('display','block');
+    $('.clock > .top-clock').css('display','none');
+    $('.clock > .center-clock').css('display','flex');
+  });
+
+  $( ".center-clock" ).click(function() {
+    $('.calendar').css('transform','scale(1)');
+    $('.calendar').css('display','block');
+    $('.datepicker-inline').css('transform','scale(0)');
+    $('.datepicker-inline').css('display','none');
+    $('.clock > .top-clock').css('display','flex');
+    $('.clock > .center-clock').css('display','flex');
+  });
+
+
 });
 
 ymaps.ready(function () {

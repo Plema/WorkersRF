@@ -573,27 +573,94 @@ footer{
           position: absolute;
           z-index: -1;
           transform: scale(0);
-          left: -7px;
-          &:before{
-            width: 105%;
-            height: 105%;
-            background: #ffffff;
-            opacity: 0.74;
-            content: '';
-            position: absolute;
-            right: 0;
-            bottom: -60px;
-            margin: auto;
-            left: -2.5%;
-          }
+          left: -13px;
+          min-width: 306px;
+          max-width: 306px;
+          width: 100%;
           .datepicker1{
             display: none;
+          }
+          .datepicker-inline{
+            transform: scale(0);
+            transition: 0.3s;
+            display: none;
+          }
+          .calendar{
+            padding: 5px 15px;
+            box-shadow: 0 0 30px 24px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: 0.3s;
+            .all-calendar{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              a{
+                display: block;
+                &:last-of-type{
+                  transform: rotate(180deg);
+                }
+              }
+              .all-day{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                .one-day{
+                  width: 35px;
+                  text-align: center;
+                  cursor: pointer;
+                  padding: 7px 1px;
+                  border-radius: 10px;
+                  transition: 0.3s all;
+                  margin: 0 2px;
+                  p{
+                    margin-bottom: 12px;
+                    color: #3a5da8;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                  }
+                  h6{
+                    color: #242d39;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin: 0;
+                    background: transparent;
+                    background-color: transparent;
+                    border: none;
+                    padding: 0;
+                  }
+                }
+                .active-day{
+                  background-color: #3a5da8;
+                  p,h6 {
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+            .otkr-calendar{
+              margin-top: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: #3a5da8;
+              font-size: 12px;
+              font-weight: 400;
+              img{
+                max-width: 10px;
+                margin-left: 9px;
+              }
+            }
           }
           .block-clock{
             background: #ffffff;
             position: relative;
             padding-bottom: 40px;
             padding-top: 25px;
+            border-radius: 10px;
             p{
               text-align: center;
               color: #3a5da8;
@@ -633,6 +700,7 @@ footer{
                 }
               }
               .center-clock{
+                cursor: pointer;
                 p{
                   font-size: 34px;
                   margin: 0 30px;
