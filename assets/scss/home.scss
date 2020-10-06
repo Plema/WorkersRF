@@ -602,6 +602,7 @@ footer{
               margin-bottom: 10px;
             }
             .clock{
+              margin-bottom: 10px;
               .top-clock{
                 display: flex;
                 align-items: center;
@@ -609,6 +610,9 @@ footer{
                 padding: 15px;
                 position: relative;
                 border-bottom: 1px solid #ecebed;
+                &:last-of-type{
+                  border-color: transparent;
+                }
                 p{
                   color: #242d39;
                   font-size: 21px;
